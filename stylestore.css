@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Whereas recognition of the inherent dignity";
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 63, 24);
+  padding: 10px;
+  margin: 2rem 0;
+  border-radius: 18px;
+  background: rgb(0, 0, 0);
+}
+#hd-about {
+  color: rgb(255, 255, 255);
+}
+#hd-about:hover {
+  background: rgb(218, 214, 214);
+  cursor: pointer;
+}
+#hd-about:hover {
+  color: rgb(0, 0, 0);
+}
+
+.ord {
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 25px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 1rem 2.5rem;
+  font-family: "Helvetica";
+  font-size: 15px;
+  font-weight: 600;
+}
+.ord:hover {
+  background: rgb(11, 238, 52);
+  transition: 0.7s;
+  cursor: pointer;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow: 0 0.5rem 15px rgb(255, 255, 255);
+}
+
+header .logo {
+  font-size: 35px;
+  font-family: "Helvetica";
+  color: rgb(255, 253, 253);
+  font-weight: 1000;
+}
+
+header .logo span {
+  font-size: 35px;
+  font-family: "Helvetica";
+  color: rgb(255, 253, 253);
+  font-weight: 1000;
+}
+
+header .Contact a {
+  font-size: 25px;
+  font-family: "Helvetica";
+  font-weight: 800;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+header .Contact a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header .icon a {
+  font-size: 20px;
+  padding: 7px;
+  margin-top: 12px;
+  color: rgb(255, 255, 255);
+}
+
+header .icon a:hover {
+  color: rgb(248, 0, 0);
+}
+
+header #hastag {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 12px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 7px 20px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(customer/pexels-tranmautritam-370470.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .info {
+  max-width: 55%;
+}
+.home .info h3 {
+  font-family: "Helvetica";
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.home .info span {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Helvetica";
+  color: rgb(255, 237, 237);
+  padding: 0.2rem 0;
+  line-height: 1;
+}
+
+.home .info p {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+.about {
+  display: block;
+  align-items: center;
+  min-height: 100vh;
+  background: url(customer/pexels-pixabay-414584.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.about .row .video {
+  flex: 1 1 40rem;
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+.about .row .video video {
+  width: 100%;
+  border: 1px solid skyblue;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgb(55, 51, 51, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+.about .row .video h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: rgb(255, 244, 244);
+  width: 100%;
+  padding: 10px 14px;
+  mix-blend-mode: screen;
+  text-align: center;
+}
+
+.about .row. .video-contant {
+  flex: 1 1 40rem;
+}
+.about .row .video-contant h3 {
+  font-size: 3rem;
+  font-family: Helvetica;
+  font-weight: 1000;
+  color: black;
+}
+.about .row .video-contant p {
+  font-size: 1.5rem;
+  color: black;
+  font-family: Helvetica;
+  font-weight: 500;
+  padding: 20px 0;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+
+.icon-cont {
+  background: rgb(235, 230, 230);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.icon-cont .icons {
+  background: rgb(255, 249, 249);
+  border: 1px solid rgb(225, 221, 221);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+.icon-cont .icons img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-cont .icons h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Helvetica";
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.icon-cont .icons span {
+  color: rgb(255, 5, 5);
+  padding-bottom: 14px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  font-size: 15px;
+}
+.icon-cont:hover {
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.product .heading {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.product .heading span {
+  color: rgb(255, 255, 255);
+}
+
+.product .heading:hover {
+  background: rgb(218, 214, 214);
+  color: black;
+}
+.product .heading span:hover {
+  color: rgb(255, 255, 255);
+}
+
+.product .box-contain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-them .heading {
+  color: rgb(255, 255, 255);
+}
+
+.contact-them .heading:hover {
+  background: rgb(218, 214, 214);
+  color: black;
+}
+.contact-them .heading span {
+  color: rgb(249, 249, 249);
+}
+.contact-them .heading span:hover {
+  color: rgb(255, 255, 255);
+}
+
+.product .box-contain .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(161, 158, 158, 0.1);
+  position: relative;
+}
+
+.product .box-contain .box .discount {
+  position: absolute;
+  top: 7px;
+  font-family: Helvetica;
+  left: 900px;
+  padding: 8px 15px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  background: rgb(0, 0, 0);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.product .box-contain .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.product .box-contain .box .image img {
+  transform: scale(1.1);
+  height: 300px;
+  width: 350px;
+}
+
+.product .box-contain .box .image .icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.product .box-contain .box .image .icons a {
+  height: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  font-size: 15px;
+  width: 70%;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.product .box-contain .box .image .icons .cart-btn {
+  border-left: 0.1rem solid rgb(255, 255, 255);
+  border-right: 0.1rem solid rgb(255, 255, 255);
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.product .box-contain .box .image .icons a:hover {
+  background: rgb(2, 227, 21);
+  color: rgb(255, 252, 252);
+}
+
+.product .box-contain .box .for-all {
+  padding: 2rem;
+
+  text-align: center;
+}
+
+.product .box-contain .box .for-all h3 {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: black;
+}
+
+.product .box-contain .box .for-all .price {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: black;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.product .box-contain .box .for-all .price span {
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+  font-weight: lighter;
+  padding: 10px 5px;
+  text-decoration: line-through;
+}
+
+.review .box-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.review .box-context .box {
+  flex: 1 1 25rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(219, 114, 114);
+  border-radius: 5px;
+  padding: 18px 10px;
+  position: relative;
+}
+
+.review .box-context .box .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 25px;
+  color: rgb(12, 202, 6);
+}
+
+.review .box-context .box .star i {
+  color: rgb(255, 17, 17);
+  font-size: 20px;
+}
+
+.review .box-context .box p {
+  color: black;
+  font-weight: 600;
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+
+.review .box-context .box .user {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.review .box-context .box .user img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.review .box-context .box .user h3 {
+  font-size: 25px;
+  font-family: Helvetica;
+  font-weight: 600;
+  color: black;
+}
+
+.review .box-context .box .user span {
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 300;
+  font-family: Helvetica;
+  color: rgb(34, 9, 255);
+}
+
+.contact-them .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  align-items: center;
+}
+.contact-them {
+  display: block;
+  align-items: center;
+  min-height: 100vh;
+  background: url(customer/pexels-photo-7657752.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-them .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(218, 255, 228, 0.1);
+  border: 0.1rem solid rgb(91, 65, 65);
+  background: rgb(196, 196, 196);
+  border-radius: 20px;
+}
+
+.contact-them .row .image {
+  flex: 1 1 40rem;
+}
+
+.contact-them .row .image img {
+  width: 100%;
+  border-radius: 25px;
+  height: 500px;
+}
+
+.contact-them .row form .box {
+  padding: 15px;
+  font-size: 18px;
+  font-family: helvetica;
+  color: black;
+  text-decoration: none;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  margin: 10px 0;
+  box-shadow: 3rem solid rgb(248, 132, 132);
+  width: 100%;
+}
+
+.contact-them .row form .box:focus {
+  border-color: rgb(255, 33, 33);
+}
+
+.contact-them .row form textarea {
+  height: 20rem;
+  resize: none;
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer {
+  display: block;
+  align-items: center;
+  min-height: 100vh;
+  background: url(customer/iphone-pic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  font-size: 30px;
+  font-weight: 1000;
+  padding: 15px 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-weight: 800;
+  font-family: Helvetica;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 5px 0;
+}
+.footer .box-container .box a:hover {
+  color: rgb(2, 191, 14);
+  text-decoration: underline;
+}
+
+.footer .box-container .box img {
+  margin-top: 1.3rem;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 1000;
+  font-family: Helvetica;
+  margin-top: 5rem;
+  padding-top: 10rem;
+  font-size: 25px;
+  color: rgb(18, 17, 17);
+  border-top: 0.2rem solid rgb(84, 82, 82, 0.1);
+}
+
+.footer .credit span {
+  font-family: Helvetica;
+  font-weight: 1500;
+  color: rgb(228, 31, 64);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 30px;
+  }
+  section {
+    padding: 2rem;
+  }
+  .home {
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .Contact {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid rgb(44, 39, 39);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #hastag:checked ~ .Contact {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .Contact a {
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    background: rgb(77, 77, 77);
+    border: 1.5px solid rgb(255, 255, 255);
+    display: block;
+  }
+}
+
+.home .info h3 {
+  font-size: 5rem;
+}
+.home .info span {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}
